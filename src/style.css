@@ -1,0 +1,86 @@
+:root {
+    --main-text-color: darkslateblue;
+    --main-font: Georgia, "Times New Roman", Times, serif;
+    --main-font-size: 18px;
+    --main-background: lightgoldenrodyellow;
+  }
+  
+  body {
+    color: var(--main-text-color);
+    background-color: var(--main-background);
+    text-align: center;
+    padding: 50px;
+    font-family: var(--main-font);
+    font-size: var(--main-font-size);
+  }
+  h1 {
+    font-size: 35px;
+    margin-top: 50px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h5 {
+    font-size: 26px;
+    font-weight: bold;
+    color: plum;
+    border-bottom: white;
+   
+  }
+  button {
+    width: 200px;
+    border: 1px solid lightslategray;
+    background-color: whitesmoke;
+    color: blue;
+  }
+  button:hover a,
+  button:focus a {
+    color: whitesmoke;
+  }
+  a {
+    text-decoration: none;
+  }
+  button:hover,
+  button:focus {
+    background-color: blue;
+    border: 1px solid white;
+  }
+  .buttons {
+    margin-bottom: 100px;
+  }
+  .personal-information {
+    display: flex;
+    justify-content: space-between;
+  }
+  .personal-information p {
+    width: 600px;
+    margin: 20px;
+    padding: 20px;
+  }
+  .my-logo {
+    font-size: 30px;
+    background-color: whitesmoke;
+    margin-right: 50px;
+  }
+  .project-img {
+    background-color: azure;
+  }
+  .weather {
+    outline: 1px solid white;
+    padding: 20px;
+    margin-top: 40px;
+   
+  }
+  .weather-tittle {
+    color: rgb(185, 215, 241);
+  }
+  .section-projects {
+    text-align: start;
+  }
+.works-list {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+}
+
+  
