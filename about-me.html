@@ -1,121 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-    <title>About me</title>
-    <link rel="stylesheet" href="./src/style.css" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description"  content="Portfolio of projects Full-Stack developer Bigdash Iryna.Responsive websete.Adaptive web sites.Landing page for business. Personal app for weather. " />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <title>Information about Bigdash Iryna</title>
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+
+<body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container-fluid">
         <a class="nav-link my-logo" href="./index.html">BIM</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-            <a class="nav-link" href="./about-me.html"
-              >About me </a>
-            <a class="nav-link" href="./about-me.html#contact"
-              >Contact me</a>
+            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+            <a class="nav-link active" href="./about-me.html">About me </a>
+            <a class="nav-link" href="./about-me.html#contact">Contact me</a>
           </div>
         </div>
       </div>
     </nav>
   </header>
-    <h1>About Me</h1>
-    <h2>Full Steck developer from Kiev, Ukraine</h2>
-</br>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda
-        aut quas illum ducimus, dolorem quasi ipsum provident inventore tempore
-        quae voluptates illo nemo itaque commodi odio autem quaerat maiores?
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda
-        aut quas illum ducimus, dolorem quasi ipsum provident inventore tempore
-        quae voluptates illo nemo itaque commodi odio autem quaerat maiores?
-      </p>
-    </div>
-    <main>
-   <section>
-    <ul class="works-list">
-          <figure class="figure">
-            <img src="./image/icecream-project.png" 
-            class="figure-img img-fluid p-2 shadow rounded" 
-            alt="Lading page"
-            width="300px"
-            height="300px">
-            <figcaption class="figure-caption">Landing page</figcaption>
-          </figure>      
-          <figure class="figure">
-            <img src="./image/Weather.png" 
-            class="figure-img img-fluid p-2 shadow rounded" 
-            alt="App for desctop"
-            width="350px"
-            height="350px">
-            <figcaption class="figure-caption">App for desctop</figcaption>
-          </figure>
-          <figure class="figure">
-            <img src="./image/webstudio.png" 
-            class="figure-img img-fluid p-2 shadow rounded" 
-            alt="Fully responsive site"
-            width="300px"
-            height="300px">
-            <figcaption class="figure-caption">Fully responsive site</figcaption>
-          </figure>
+  <main>
+    <section class="pessonal-infirmation d-block d-md-flex gap-5">
+      <ul class="pessonal-infirmation__list">
+        <li>
+          <img src="./image/foto.jpeg" alt="My foto" width="300px" height="400px" 
+          class="figure-img img-fluid p-2 shadow rounded photo">
+        </li>
+        <li>
+          <ul class="d-flex justify-content-around p-2 rounded gap-3">
+            <li class="networks-item"><a href="" class="personal-information__link"><svg class="pessonal-infirmation__icon pessonal-infirmation__icon--reverse">
+                  <use href="./image/icons.svg#icon-facebook"></use>
+                </svg></a></li>
+            <li class="networks-item"><a href="" class="personal-information__link instagram"><svg class="pessonal-infirmation__icon">
+                  <use href="./image/icons.svg#icon-instagram"></use>
+                </svg></a></li>
+            <li class="networks-item"><a href="" class="personal-information__link"><svg class="pessonal-infirmation__icon">
+                  <use href="./image/icons.svg#icon-telegram"></use>
+                </svg></a></li>
+            <li class="networks-item"><a href="" class="personal-information__link"><svg class="pessonal-infirmation__icon">
+                  <use href="./image/icons.svg#icon-github"></use>
+                </svg></a></li>
+            <li class="networks-item"><a href="" class="personal-information__link"><svg class="pessonal-infirmation__icon pessonal-infirmation__icon--reverse">
+                  <use href="./image/icons.svg#icon-linkedin"></use>
+                </svg></a></li>
+          </ul>
+        </li>
+        </li>
+      </ul>
+
+        <ul class="pessonal-infirmation__description">
+          <li>
+            <h1>About Me</h1>
+          </li>
+          <li>
+            <h2>Full-Stack developer from Kyiv, Ukraine</h2>
+          </li>
+          <li>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda
+              aut quas illum ducimus, dolorem quasi ipsum provident inventore tempore
+              quae voluptates illo nemo itaque commodi odio autem quaerat maiores?
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda
+              aut quas illum ducimus, dolorem quasi ipsum provident inventore tempore
+              quae voluptates illo nemo itaque commodi odio autem quaerat maiores?
+            </p>
+          </li>
         </ul>
-  </section>
-    <div class="contacts" id="contact">
+    </section>
 
-      <!-- <ul class="contacts list">
-        <li class="contacts__item">
-          <a
-            href="mailto:info@devstudio.com"
-            lang="en"
-            class="contacts__link link">
-            <svg class="contacts-mail__icon">
-              <use href="./images/icons.svg#icon-heder-mail"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-        </li>
-        <li class="contacts__item">
-          <a href="tel:+380961111111" class="contacts__link link">
-            <svg class="contacts-telefon__icon">
-              <use href="./images/icons.svg#icon-heager-phone"></use>
-            </svg>
-            +38 096 111 11 11
-          </a>
-        </li>
-      </ul> -->
-
-      
+    <section>
+      <ul class="works-list">
+        <figure class="figure">
+          <img src="./image/icecream-project.png" class="figure-img img-fluid p-2 shadow rounded" alt="Lading page"
+            width="300px" height="300px">
+          <figcaption class="figure-caption">Landing page</figcaption>
+        </figure>
+        <figure class="figure">
+          <img src="./image/Weather.png" class="figure-img img-fluid p-2 shadow rounded" alt="App for desctop"
+            width="350px" height="350px">
+          <figcaption class="figure-caption">App for desktop</figcaption>
+        </figure>
+        <figure class="figure">
+          <img src="./image/webstudio.png" class="figure-img img-fluid p-2 shadow rounded" alt="Fully responsive site"
+            width="300px" height="300px">
+          <figcaption class="figure-caption">Fully responsive site</figcaption>
+        </figure>
+      </ul>
+    </section>
+<section class="contacts-networks" id="contact">
       <h2>Contact Me 📧</h2>
-      <a href="mailto:mo_ly@mail.ru">mo_ly@mail.ru</a>
-    </div>
+      <ul class="d-flex justify-content-center p-2 rounded gap-4">
+        <li><a href=""><svg class="pessonal-infirmation__icon pessonal-infirmation__icon--reverse">
+              <use href="./image/icons.svg#icon-facebook"></use>
+            </svg></a></li>
+        <li><a href=""><svg class="pessonal-infirmation__icon">
+              <use href="./image/icons.svg#icon-instagram"></use>
+            </svg></a></li>
+        <li><a href=""><svg class="pessonal-infirmation__icon">
+              <use href="./image/icons.svg#icon-telegram"></use>
+            </svg></a></li>
+        <li><a href=""><svg class="pessonal-infirmation__icon">
+              <use href="./image/icons.svg#icon-github"></use>
+            </svg></a></li>
+        <li><a href=""><svg class="pessonal-infirmation__icon pessonal-infirmation__icon--reverse">
+              <use href="./image/icons.svg#icon-linkedin"></use>
+            </svg></a></li>
+      </ul>
+    </section>
   </main>
-  </body>
+  <footer class="footer">
+    <ul class="contacts list">
+      <li class="contacts__item">
+        <a href="mailto:imbigdash@gmail.com" lang="en" class="contacts__link text-white">
+          imbigdash@gmail.com
+        </a>
+      </li>
+      <li class="contacts__item">
+        <a href="tel:+380637143575" class="contacts__link text-white">
+          +38 063 714 35 75
+        </a>
+      </li>
+    </ul>
+  </footer>
+</body>
+
 </html>

@@ -9,9 +9,9 @@
     color: var(--main-text-color);
     background-color: var(--main-background);
     text-align: center;
-    padding: 50px;
     font-family: var(--main-font);
     font-size: var(--main-font-size);
+    margin: 0 auto;
   }
   h1 {
     font-size: 35px;
@@ -26,6 +26,10 @@
     color: plum;
     border-bottom: white;
    
+  }
+  section {
+    padding: 60px;
+    
   }
   button {
     width: 200px;
@@ -45,18 +49,25 @@
     background-color: blue;
     border: 1px solid white;
   }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  image {
+    display: block;
+  }
+  
   .buttons {
     margin-bottom: 100px;
+    gap: 10px;
+    justify-content: center;
   }
   .personal-information {
     display: flex;
     justify-content: space-between;
   }
-  .personal-information p {
-    width: 600px;
-    margin: 20px;
-    padding: 20px;
-  }
+
   .my-logo {
     font-size: 30px;
     background-color: whitesmoke;
@@ -82,5 +93,95 @@
   gap: 60px;
   justify-content: center;
 }
+.greeting {
+  background-color: deepskyblue;
+  background-image: url("/image/bgr.jpeg");
+  background-size: cover;
 
+}
+.card-header {
+  font-size: 40px;
+}
+.card-title,
+.card-text {
+  font-size: 32px;
+}
+.project-img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width:768px) {
+  .project-img {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+.project-weather {
+background-color: aliceblue;
+}
+.projects__thumb {
+  flex-direction: baseline;
+}
+.project__tittle--nomargin {
+  margin-top: 0px;
+}
+.footer {
+  background-image: url("/image/bgr.jpeg");
+  padding: 30px;
+}
+/* About-me page */
+
+.pessonal-infirmation__list {
+  /* width: 300px; */
+  justify-content: center;
+  margin-top: 30px;
+  background-color: white;
+}
+.networks-item {
+  border-radius: 50%;
+  border-color: aliceblue;
+}
+.personal-information__link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+}
+
+.pessonal-infirmation__icon {
+  width: 30px;
+  height: 30px;
+  border-color: aliceblue;
+  background-color:white;
+  fill: rgb(156, 156, 239);
+  border-radius: 50%;
+}
+.pessonal-infirmation__icon:hover,
+.pessonal-infirmation__icon:focus {
+  background-color: rgb(156, 156, 239);
+  fill: white;
+}
+
+.pessonal-infirmation__icon--reverse {
+  background-color: rgb(156, 156, 239);
+  fill: white;
+}
+.pessonal-infirmation__icon--reverse:hover,
+.pessonal-infirmation__icon--reverse:focus {
+  background-color:white;
+  fill:  rgb(156, 156, 239);
+}
+.instagram {
+ fill: white;
+ background-color: rgb(156, 156, 239);
   
+}
+@media screen and (min-width:768px) {
+.pessonal-infirmation {
+  justify-content: space-between;
+}
+}
+.contacts-block {
+  justify-content: center;
+}
