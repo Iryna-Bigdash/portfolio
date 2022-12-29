@@ -6,6 +6,7 @@
 
 body{
   margin: auto;
+  padding: 60px;
   width: 100%;
   position: relative;
   background-color: #fcfcfc;
@@ -76,7 +77,7 @@ html{
 .header-heading{
   font-size: 2.5rem;
   font-weight: 300;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .header-heading .brand-name{
@@ -272,6 +273,7 @@ html{
   width: 100%;
   padding: 0 10%;
   margin-top: -100px;
+  margin-bottom: 10px;
 }
 
 .card{
@@ -388,8 +390,8 @@ html{
 }
 
 .project-card{
-  width: 250px;
-  height: 250px;
+  width: 220px;
+  height: 200px;
   overflow: hidden;
   display: flex;
   background: #ebebeb;
@@ -426,6 +428,7 @@ html{
 
 .project-wrapper{
   transition: 1s;
+
 }
 
 .project-card.blur{
@@ -546,4 +549,75 @@ textarea{
   cursor: pointer;
   border-radius: 5px;
   margin-top: 20px;
+}
+.mail-link {
+  text-decoration: none;
+  color: #8c4286;
+
+}
+.contact-section-subheading {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+/* Work page */
+.card-list {
+  list-style: none;
+margin-bottom: 30px;
+}
+.card-item {
+  width: 300px;
+  height: 350px;
+}
+.card-thumb {
+display: inline-flexbox;
+align-items: center;
+  width: 300px;
+  height: 350px;
+  padding: 20px;
+  border: 1px solid #8c4286;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  background-color: #fdfdfd;
+}
+.card-img-icecream {
+  transform: translateY(300px);
+  transform: translateY(20%);
+}
+.card-img-banderogus{
+  transform: translateY(300px);
+transform: translateY(5%);
+}
+.card-img-weather {
+transform: translateY(300px);
+transform: translateY(30%);
+}
+.card-img-webstudio {
+transform: translateY(300px);
+transform: translateY(5%);
+}
+.card-img-ice-cream-2 {
+transform: translateY(300px);
+transform: translateY(50%);
+}
+.card-list-work-page {
+  margin-top: 100px;
+}
+.text-thumb {
+  width: 300px;
+  text-align: center;
+  color: #8c4286;
+  transform: translateY(-80px);
+}
+.card-link {
+  text-decoration: none;
+  padding: o;
+  max-height: 350px;
+}
+.link-works {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #121212;
+  border: 1px solid #fdfdfd;;
+  padding: 10px;
+  border-radius: 10px;
 }

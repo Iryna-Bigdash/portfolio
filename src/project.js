@@ -23,6 +23,15 @@ let projectData = [
         github: '#',
         live: '#',
         tags: '#javascript, #fullstack, #css'
+    },
+    {
+        
+        image: './image/project-5.png',
+        name: 'project one',
+        detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, augue quis rutrum auctor, erat est mattis velit, vel luctus est nisl',
+        github: '#',
+        live: '#',
+        tags: '#javascript, #fullstack, #css'
     }
    
     // more objects like this 👆
