@@ -16,18 +16,18 @@
     <link rel="stylesheet" href="./src/style.css" />
 
 </head>
-<nav class="navbar">
-    <h1 class="logo">Bigdash I.</h1>
-    <ul class="nav-links-container">
-        <li class="nav-link"><a href="#home-section" class="links active">home</a></li>
-        <li class="nav-link"><a href="#project-section" class="links">projects</a></li>
-        <li class="nav-link"><a href="#about-section" class="links">about</a></li>
-        <li class="nav-link"><a href="#contact-section" class="links">contact</a></li>
-    </ul>
-</nav>
 <header class="header" id="home-section">
+    <nav class="navbar">
+        <a href="#" class="logo">Iryna Bigdash</a>
+        <ul class="nav-links-container">
+            <li class="nav-link"><a href="#home-section" class="links active">home</a></li>
+            <li class="nav-link"><a href="#project-section" class="links">projects</a></li>
+            <li class="nav-link"><a href="#about-section" class="links">about</a></li>
+            <li class="nav-link"><a href="#contact-section" class="links">contact</a></li>
+        </ul>
+    </nav>
     <div class="content">
-        <h1 class="header-heading">Hey, My name is Iryna Bigdash. I am
+        <h1 class="header-heading">Hey! My name is Iryna Bigdash. I am
             <span class="brand-name">full stack<span></span> <span>developer</span></span>
         </h1>
         <a href="#about-section" class="btn">Read more</a>
@@ -139,60 +139,50 @@
             <button class="btn filter-btn">javascript</button>
             <button class="btn filter-btn">fullstack</button>
         </div>
-
         <!--  project cards -->
-        <ul class="card-list d-block d-md-flex gap-2 justify-content-center">
-            <a class="card-link"
-                href="https://s3.amazonaws.com/shecodesio-production/challenge_submissions/files/001/183/980/original/HW_week3.html?1664830652">
-                <li class="card-item">
-                    <div class="card-thumb">
-                        <img src="./image/project-1.png" alt="" class="card-img card-img-icecream"> </img>
-                    </div>
-                    <div class="text-thumb">
-                        <h4 class="card-title">"Ice Cream"</h4>
-                    </div>
-                </li class="card-item">
-            </a>
-
-            <a class="card-link"
-            href="https://capable-malabi-820ddb.netlify.app">
-                <li>
-                    <div class="card-thumb">
-                        <img src="./image/project-2.png" alt="" class="card-img card-img-weather"> </img>
-                    </div>
-                    <div class="text-thumb">
-                        <h4 class="card-title">"Weather App"</h4>
-                    </div>
-                </li>
-            </a>
-
-            <a class="card-link"
-            href="https://iryna-bigdash.github.io/goit-markup-hw-08/">
-                <li class="card-item">
-                    <div class="card-thumb">
-                        <img src="./image/project-3.png" alt="" class="card-img card-img-webstudio"> </img>
-            </div>
-            <div class="text-thumb">
-                <h4 class="card-title">"Web Studio"</h4>
-            </div>
+        <ul class="card-list d-block d-md-flex">
+            <!-- project-1 -->
+            <li class="project-item card-item">
+                <div class="card-thumb d-block d-md-flex">
+                    <a class="card-link"
+                        href="https://s3.amazonaws.com/shecodesio-production/challenge_submissions/files/001/183/980/original/HW_week3.html?1664830652">
+                        <img src="./image/project-1.png" alt="" class="card-img card-img-icecream"></img>
+                    </a>
+                </div>
+                <h4 class="project-card-title">"Landing page"</h4>
             </li>
-        </a>
-            <a class="card-link"
-            href="https://andriizak.github.io/IceCream/">
-                <li class="card-item">
-                    <div class="card-thumb">
-                        <img src="./image/project-4.png" alt="" class="card-img card-img-ice-cream-2"></img>
-                    </div>
-                    <div class="text-thumb">
-                        <h4 class="card-title">"Ice Cream"</h4>
-                    </div>
-            </a>
 
+            <!-- project-2 -->
+            <li class="project-item card-item">
+                <div class="card-thumb d-block d-md-flex">
+                    <a class="card-link" href="https://capable-malabi-820ddb.netlify.app">
+                        <img src="./image/project-2.png" alt="" class="card-img card-img-weather"> </img>
+                    </a>
+                </div>
+                <h4 class="project-card-title">"Descktop App"</h4>
+            </li>
+            <!-- project-3 -->
+            <li class="project-item card-item">
+                <div class="card-thumb d-block d-md-flex">
+                    <a class="card-link" href="https://iryna-bigdash.github.io/goit-markup-hw-08/">
+                        <img src="./image/project-3.png" alt="" class="card-img card-img-webstudio"> </img>
+                    </a>
+                </div>
+                <h4 class="project-card-title">"Full Responsive"</h4>
+            </li>
+            <!-- project-4 -->
+            <li class="project-item card-item">
+                <div class="card-thumb d-block d-md-flex">
+                    <a class="card-link" href="https://andriizak.github.io/IceCream/">
+                        <img src="./image/project-4.png" alt="" class="card-img card-img-ice-cream-2"></img>
+                    </a>
+                </div>
+                <h4 class="project-card-title">"Full Responsive"</h4>
+            </li>
         </ul>
 
 
-        </div>
-        <a href="./works.html" class="link-works">see more</a>
+        <a href="./works.html" class="link-works" type="button">see more >>></a>
     </section>
     <section id="contact-section">
         <h1 class="heading">contact</h1>
@@ -205,14 +195,32 @@
                 <input type="email" placeholder="email">
                 <input type="text" placeholder="subject">
                 <textarea placeholder="message"></textarea>
-                <button class="contact-btn modal-form-btn">contact</button>
+                <button class="contact-btn modal-form-btn btn">contact</button>
             </form>
         </div>
     </section>
 </main>
+<footer class="footer-basic">
+    <div class="social">
+        <div class="social-links">
+            <a href="https://github.com/Iryna-Bigdash"><img src="image/github.png" class="social-img"
+                    alt="Link to github"></a>
+            <a href="https://instagram.com/i.ris_ha"><img src="image/insta.png" class="social-img" alt=""></a>
+            <a href="https://www.facebook.com/ira.bigdash"><img src="image/fb.png" class="social-img"
+                    alt=""></a>
+            <a href="https://www.linkedin.com/in/iryna-bigdash"><img src="image/linked.png" class="social-img"
+                    alt=""></a>
+        </div>
+</div>
+    <ul class="list-inline">
+        <li class="list-inline-item"><a href="./index.html#home-section">Home</a></li>
+        <li class="list-inline-item"><a href="#">Services</a></li>
+        <li class="list-inline-item"><a href="./index.html#about-section">About</a></li>
+    </ul>
+    <p class="copyright">Iryna Bigdash © 2022</p>
+</footer>
 <script src="./src/app.js"></script>
 <script src="./src/project.js"></script>
 <script src="./src/form.js"></script>
 </body>
-
 </html>
