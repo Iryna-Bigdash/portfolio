@@ -6,41 +6,83 @@
 
   --main-text:'Roboto', sans-serif;
 }
+.container {
+  outline: 1px solid red;
+}
 
-*{
+/* *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 body{
-  margin: auto;
-  padding: 60px;
-  width: 100%;
+  font-size: 16px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin: 0;
+  padding-top: 100px;
   position: relative;
   background-color: var(--main-bgr-color);
   font-family: var(--main-text);
+
 }
-ul,
+section {
+  outline: 1px solid rgb(4, 107, 40);
+  padding: 60px 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p,
-li,
-a {
-  padding: 0;
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-@media screen and (max-width:450px) {
-  body {
-    padding: 40px;
-    text-align: center;
-  }
+ul {
+  list-style: none;
+  padding-left: 0;
 }
+a {
+  text-decoration: none;
+}
+
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+ 
+@media screen and (min-width:480px) {
+  width: 480px;
+}
+@media screen and (min-width:768px) {
+  width: 768px;
+}
+@media screen and (min-width:1200px) {
+  width: 1200px;
+}
+}
+
 
 html{
   scroll-behavior: smooth;
+}
+
+.page-header {
+  padding-bottom: 60px;
 }
 
 ::selection{
@@ -52,11 +94,9 @@ html{
 .navbar{
   position: fixed;
   top: 0;
-  left: 0;
   z-index: 3;
   width: 100%;
   height: 80px;
-  padding: 0 10vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,7 +118,6 @@ html{
 .links{
   text-decoration: none;
   color: #000;
-  margin: 0 5px;
   padding: 10px;
   text-transform: capitalize;
   font-size: 1rem;
@@ -92,29 +131,41 @@ html{
 
 /* header */
 
-.header{
-  width: 100%;
-  height: 100vh;
-  padding: 0 10vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 50px;
+@media screen and (max-width:1199px) {
+  .hero {
+    text-align: center;
+  }
 }
 
 .header-heading{
+padding-top: 40px;
+  font-size: 2.5rem;
+  font-weight: 200;
+  margin-bottom: 50px;
+}
+@media screen and (min-width:768px) {
+.header-heading {
   font-size: 2.5rem;
   font-weight: 300;
   margin-bottom: 10px;
+  }
 }
 
 .header-heading .brand-name{
   display: block;
   text-transform: capitalize;
-  font-size: 5rem;
-  margin: 10px 0;
+  font-size: 4rem;
+  margin: 50px 0;
   font-weight: 400;
 }
+@media screen and (min-width:768px) {
+  .header-heading {
+  font-size: 4rem;
+  margin: 10px 0;
+  font-weight: 400;
+    }
+  }
+
 
 .brand-name span{
   color: var(--acsent-color);
@@ -156,6 +207,11 @@ html{
   object-fit: cover;
   border-radius: 10px;
 }
+@media screen and (max-width:768px) {
+  .header-img {
+    display: none;}
+}
+
 
 .circle{
   width: 400px;
@@ -188,7 +244,10 @@ html{
     100%{background-position:0% 50%}
 }
 
-
+@media screen and (max-width:768px) {
+  .circle {
+    display: none;}
+}
 
 .circle::before{
   content: '';
@@ -204,7 +263,6 @@ html{
 
 #about-section{
   position: relative;
-  padding: 100px 10vw;
 }
 
 .heading{
@@ -212,23 +270,23 @@ html{
   text-transform: capitalize;
   font-size: 3rem;
   font-weight: 300;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .about-container{
   width: 100%;
-  margin: 50px 0 100px;
   display: flex;
-  gap: 100px;
+  gap: 50px;
 }
 
 .image-container{
-  width: 40%;
+  /* width: 40%; */
   position: relative;
 }
 
 .about-img{
   width: 70%;
+  width: 250px;
   height: 400px;
   display: block;
   object-fit: cover;
@@ -289,9 +347,9 @@ html{
   opacity: 1;
 }
 
-.info{
+/* .info{
   width: 50%;
-}
+} */
 .btn-info:hover,
 .btn-info:focus {
 background-color: var(--acsent-color);
@@ -303,33 +361,32 @@ background-color: var(--acsent-color);
   font-size: 1.2rem;
   line-height: 2rem;
   margin: 30px 0;
+  width: 100%;
 }
 
 /* skills */
 
 .sub-heading{
+  text-align: center;
   font-size: 2.5rem;
   font-weight: 300;
-  margin: 40px 0;
-  text-transform: capitalize;
+margin-bottom: 40px;
+text-transform: capitalize;
 }
 .skill-section {
   position: relative;
-  padding: 100px 10vw;
   background: var(--waite-color);
+  text-align: center;
 }
 
 .skills{
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  margin-bottom: 60px;
-
 }
 
 .skill-name{
   padding: 10px 20px;
-  background: var(--waite-color);
   border: 1px solid #cecece;
   cursor: pointer;
   transition: .2s;
@@ -348,11 +405,17 @@ background-color: var(--acsent-color);
   position: relative;
 }
 
-.card-container{
+.card-container {
   width: 100%;
-  padding: 0 10%;
-  margin-top: -100px;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width:450px) {
+  .card-container {
+    width: 100%;
+    padding: 0 10%;
+    margin-top: -100px;
+}
 }
 
 .card{
@@ -390,6 +453,9 @@ background-color: var(--acsent-color);
 
 .card-container:nth-child(even) .card{
   margin-left: auto;
+}
+.card:hover {
+  z-index: 1;
 }
 
 .card-title{
@@ -435,20 +501,13 @@ background-color: var(--acsent-color);
   left: -8%;
 }
 
-/* project section */
-
-#project-section{
-  position: relative;
-  margin: 50px 0;
-  padding: 0 10vw;
-}
 .wite-line {
   height: 50px;
   margin-bottom: 50px;
   background:var(--waite-color);
 }
 
-.filter{
+/* .filter{
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -463,33 +522,28 @@ background-color: var(--acsent-color);
 .filter-btn.active{
   background: var(--acsent-color);
   color: var(--waite-color);
+} */
+.project-section {
+  text-align: center;
 }
 
 .project-container{
-  width: 100%;
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 5px;
   position: relative;
   justify-content: center;
 }
 .project-card{
   width: 220px;
   height: 200px;
-  overflow: hidden;
   display: flex;
   background: #ebebeb;
   transition: .5s;
   border-radius: 5px;
-  position: relative;
 }
-.project-image{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+
 .project-card-title {
-  text-align: center;
   color: var(--acsent-color);
   margin-bottom: 10px;
 }
@@ -503,18 +557,12 @@ background-color: var(--acsent-color);
 }
 
 /* contact section */
-
-#contact-section{
-  margin: 100px 0;
-  padding: 0 10vw;
-}
 .modal-form-container {
   text-align: center;
 }
 
 .form{
   width: 100%;
-  margin-top: -50px;
 }
 
 input, textarea{
@@ -528,7 +576,6 @@ input, textarea{
   margin: 10px 0;
   outline: none;
 }
-
 ::placeholder{
   color: #b4b4b4;
   text-transform: capitalize;
@@ -558,27 +605,28 @@ textarea{
 
 }
 .contact-section-subheading {
-  font-size: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 /* Progects section */
 .card-list {
 list-style: none;
-margin-bottom: 30px;
+margin-bottom: 20px;
 display: flex;
-gap: 30px;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
 }
-@media screen and (max-width:1199px) {
+@media screen and (min-width:1199px) {
   .card-list {
   flex-wrap: wrap;
   }
 }
 .card-item {
+  display: inline-block;
   width: 300px;
   height: 320px;
   padding: 20px;
   border-radius: 10px;
-  margin-bottom: 30px;
   border: 1px solid #efdae8;
 }
 .card-item:hover,
@@ -630,16 +678,19 @@ align-items: center;
   }
  
   /* Works page */
-  .work-item {
-    display: flex;
-  }
   .works-section {
-    padding: 100px 0;
+    padding: 0;
+  }
+  .work-item {
+    display: inline-flex;
+  }
+  .card-img {
+    display: inline-block;
   }
   .works-main-title {
    text-align: center;
    color: #5e286a;
-   margin-bottom: 100px;
+   margin: 40px 0;
   }
 .works-flex-container {
   list-style: none;
@@ -666,28 +717,13 @@ text-align: right;
 
 /* Footer */
 .footer-basic {
-  padding:40px 0;
+  text-align:center;
+  color:#aaa;
   background-color:var(--waite-color)fff;
   color:var(--secondary-text-color);
 }
-
-.footer-basic ul {
-  padding:0;
-  list-style:none;
-  text-align:center;
-  font-size:18px;
-  line-height:1.6;
-  margin-bottom:0;
-}
-
-.footer-basic li {
-  padding:0 10px;
-}
-
-.footer-basic ul a {
-  color:inherit;
-  text-decoration:none;
-  opacity:0.8;
+.footer-basic a {
+  color: #aaa;
 }
 
 .footer-basic ul a:hover {
@@ -695,20 +731,14 @@ text-align: right;
 }
 
 .footer-basic .social {
-  text-align:center;
-  padding-bottom:25px;
+  margin-bottom: 15px;
 }
 
 .footer-basic .social > a {
-  font-size:24px;
   width:40px;
   height:40px;
-  line-height:40px;
-  display:inline-block;
-  text-align:center;
   border-radius:50%;
   border:1px solid #ccc;
-  margin:0 8px;
   color:inherit;
   opacity:0.75;
 }
@@ -717,10 +747,8 @@ text-align: right;
   opacity:0.9;
 }
 
-.footer-basic .copyright {
-  margin-top:15px;
-  text-align:center;
+.copyright {
   font-size:13px;
-  color:#aaa;
-  margin-bottom:0;
+  color: #aaa;
+  
 }

@@ -16,8 +16,9 @@
     <link rel="stylesheet" href="./src/style.css" />
 
 </head>
-<header class="header" id="home-section">
+<header class="page-header" id="home-section">
     <nav class="navbar">
+        <div class="container">
         <a href="#" class="logo">Iryna Bigdash</a>
         <ul class="nav-links-container">
             <li class="nav-link"><a href="#home-section" class="links active">home</a></li>
@@ -25,7 +26,10 @@
             <li class="nav-link"><a href="#about-section" class="links">about</a></li>
             <li class="nav-link"><a href="#contact-section" class="links">contact</a></li>
         </ul>
+    </div>
     </nav>
+
+        <div class="container d-block d-lg-flex hero justify-content-between">
     <div class="content">
         <h1 class="header-heading">Hey! My name is Iryna Bigdash. I am
             <span class="brand-name">full stack<span></span> <span>developer</span></span>
@@ -38,13 +42,15 @@
         <img src="./image/foto.png" class="header-img" alt="My photo">
 
     </div>
+    <div>
 </header>
 <main>
     <!-- about section -->
     <section id="about-section">
+        <div class="container">
         <h1 class="heading">about me</h1>
         <!-- about -->
-        <div class="about-container">
+        <div class="about-container d-block d-lg-flex">
             <div class="image-container">
                 <div class="square"></div>
                 <img src="./image/foto.png" class="about-img" alt="foto Bigdash Irina">
@@ -76,12 +82,14 @@
                     have as individual as team projects."
                 </p>
                 <a href="https://taupe-custard-ab0ec6.netlify.app/" class="btn btn-info">resume</a>
-                <a href="#" class="btn btn-info">see CV</a>
+                <!-- <a href="#" class="btn btn-info">see CV</a> -->
             </div>
         </div>
+    </div>
     </section>
     <!-- skills part -->
     <section class="skill-section">
+        <div class="container">
         <h2 class="sub-heading">skills</h2>
 
         <div class="skills">
@@ -99,7 +107,10 @@
             <p class="skill-name">React Native</p>
             <p class="skill-name">More</p>
         </div>
-
+        </div>
+    </section>
+<section class="education">
+  <div class="container">
         <!-- time line -->
         <h2 class="sub-heading">education and experiences</h2>
         <div class="timeline-container">
@@ -129,16 +140,18 @@
             </div>
             <!-- +4 more cards. -->
         </div>
+    </div>
     </section>
-    <section id="project-section">
+    <section class="project-section" id="project-section">
+        <div class="container">
         <h1 class="heading">Projects</h1>
 
-        <div class="filter">
+        <!-- <div class="filter">
             <button class="btn filter-btn active">all</button>
             <button class="btn filter-btn">css</button>
             <button class="btn filter-btn">javascript</button>
             <button class="btn filter-btn">fullstack</button>
-        </div>
+        </div> -->
         <!--  project cards -->
         <ul class="card-list d-block d-md-flex">
             <!-- project-1 -->
@@ -183,12 +196,13 @@
 
 
         <a href="./works.html" class="link-works" type="button">see more >>></a>
+    </div>
     </section>
     <section id="contact-section">
+        <div class="container">
         <h1 class="heading">contact</h1>
         <h2 class="contact-section-subheading">Send me message at <a href="mailto:imbigdash@gmail.com"
                 class="mail-link">imbigdash@gmail.com</a> or complate this form</h2>
-        <h2>sen me message at</h2>
         <div class="modal-form-container">
             <form action="#" class="form modal-form" data-netlify="true" id="form">
                 <input type="text" placeholder="name">
@@ -197,6 +211,7 @@
                 <textarea placeholder="message"></textarea>
                 <button class="contact-btn modal-form-btn btn">contact</button>
             </form>
+        </div>
         </div>
     </section>
 </main>
@@ -214,12 +229,11 @@
 </div>
     <ul class="list-inline">
         <li class="list-inline-item"><a href="./index.html#home-section">Home</a></li>
-        <li class="list-inline-item"><a href="#">Services</a></li>
         <li class="list-inline-item"><a href="./index.html#about-section">About</a></li>
     </ul>
-    <p class="copyright">Iryna Bigdash © 2022</p>
+    <p class="copyright">Iryna Bigdash © 2023</p>
 </footer>
-<script src="./src/app.js"></script>
+<!-- <script src="./src/app.js"></script> -->
 <script src="./src/project.js"></script>
 <script src="./src/form.js"></script>
 </body>
